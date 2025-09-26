@@ -1,0 +1,63 @@
+/* Scroll progress bar styles */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+.scroll-progress-bar {
+  height: 100%;
+  width: 0;
+  background: #007bff;
+  transition: width 0.25s ease-out;
+}
+
+/* Service card hover effect */
+.service-card.hovered {
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+/* Input error styles */
+.input-error {
+  border-color: #dc3545 !important;
+  background-color: #f8d7da !important;
+}
+
+.error-text {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 9999;
+  background: #007bff;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  left: 6px;
+  top: 7px;
+}
+
+/* Mobile nav slide-in */
+.navmenu {
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+body.mobile-nav-active .navmenu {
+  transform: translateX(0);
+}
